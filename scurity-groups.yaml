@@ -1,0 +1,27 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Description: SaltStack Security Groups
+
+Resources:
+  SaltMasterSecurityGroup:
+    Type: AWS::EC2::SecurityGroup
+    Properties:
+      GroupDescription: Salt Master Security Group
+      SecurityGroupIngress:
+        - IpProtocol: tcp
+          FromPort: 4505
+          ToPort: 4506
+          SourceSecurityGroupId: !ImportValue SaltMinionSecurityGroupId
+
+  SaltMinionSecurityGroup:
+    Type: AWS::EC2::SecurityGroup
+    Properties:
+      GroupDescription: Salt Minion Security Group
+      SecurityGroupIngress:
+        - IpProtocol: tcp
+          FromPort: 4505
+          ToPort: 4506
+          SourceSecurityGroupId: !ImportValue SaltMasterSecurityGroupId
+        - IpProtocol: tcp
+          FromPort: 80
+          ToPort: 80
+          SourceSecurityGroupId: !ImportValue SaltMasterSecurityGroupId

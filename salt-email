@@ -1,0 +1,19 @@
+1. installing Existing salt-Formula on StackStack.
+https://docs.saltproject.io/en/latest/topics/development/conventions/formulas.html
+2. installing SumoLogic Salt-Formula on SaltStack.
+https://www.sumologic.com/blog/getting-saltstack-logs/
+3. Running Salt-master and Salt-minion on two different Machines and making Connection. 
+4. Pefroming Salt-Stack Commands on One or more minions.
+5. Creating New Salt-Formula(Working on that)Difficultity Level: Advance
+6. Creating Salt-Stack without Minion-Master realtionShip(working on that)Difficultity Level: Advance
+7. Common Commands for Installing,creating and debugging salt-stack. 
+8. Setting up salt from Docker.
+9. Setting up salt from AWS EC2. 
+10. Understanding basic salt concepts like Salt-Pillars, salt-grains. 
+
+Presently I am working on YML file which will add one-salt-master(Ubunut), 
+One Salt-Minion(CentOS), One Salt-minion(Apache) and also add SumoLogic Salt-Formula in the stack. 
+
+Salt-Stack YAML: https://dpaste.com/4C8KN7YMW 
+
+@Pankaj Do we also need to add IAM role to each EC2 instance? 

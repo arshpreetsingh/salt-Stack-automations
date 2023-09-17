@@ -1,0 +1,26 @@
+# salt-master.yml
+
+# Specify the Salt master configuration options
+master:
+  interface: 0.0.0.0  # Replace with the IP address or network interface for the Salt master
+  file_roots:
+    base:
+      - /srv/salt  # Replace with the path to your Salt states directory
+  pillar_roots:
+    base:
+      - /srv/pillar  # Replace with the path to your Pillar data directory
+  pillar_opts: True
+
+# Specify the Salt minion configuration options
+minion:
+  grains:
+    roles:
+      - master  # Assign the 'master' role to the Salt master
+
+# Optionally, specify additional Salt master settings
+# For example, to enable Salt API:
+api:
+  enable: True
+    rest_cherrypy:
+    port: 8000
+    host: 0.0.0.0

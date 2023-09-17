@@ -1,0 +1,154 @@
+2023-07-09 02:05:21,233 [salt.cli.daemons :83  ][INFO    ][95] Setting up the Salt Master
+2023-07-09 02:05:21,400 [salt.daemons.masterapi:221 ][INFO    ][95] Preparing the salt key for local communication
+2023-07-09 02:05:21,401 [salt.cli.daemons :83  ][INFO    ][95] Starting up the Salt Master
+2023-07-09 02:05:21,423 [salt.master      :690 ][INFO    ][95] salt-master is starting as user 'salt'
+2023-07-09 02:05:21,423 [salt.master      :559 ][INFO    ][95] Current values for max open files soft/hard setting: 1048576/1048576
+2023-07-09 02:05:21,430 [salt.master      :717 ][INFO    ][95] Creating master process manager
+2023-07-09 02:05:21,430 [salt.master      :721 ][INFO    ][95] Creating master publisher process
+2023-07-09 02:05:21,682 [salt.master      :727 ][INFO    ][95] Creating master event publisher process
+2023-07-09 02:05:21,690 [salt.transport.zeromq:744 ][INFO    ][114] Starting the Salt Publisher on tcp://0.0.0.0:4505
+2023-07-09 02:05:21,690 [salt.transport.zeromq:747 ][INFO    ][114] Starting the Salt Puller on ipc:///var/run/salt/master/publish_pull.ipc
+2023-07-09 02:05:21,696 [salt.master      :751 ][INFO    ][95] Creating master maintenance process
+2023-07-09 02:05:21,698 [salt.master      :790 ][INFO    ][95] Creating master request server process
+2023-07-09 02:05:21,716 [salt.transport.zeromq:328 ][INFO    ][120] Setting up the master communication server
+2023-07-09 02:05:21,716 [salt.transport.zeromq:329 ][INFO    ][120] ReqServer clients tcp://0.0.0.0:4506
+2023-07-09 02:05:21,716 [salt.transport.zeromq:331 ][INFO    ][120] ReqServer workers ipc:///var/run/salt/master/workers.ipc
+2023-07-09 02:05:22,275 [salt.transport.zeromq:419 ][INFO    ][122] Worker binding to socket ipc:///var/run/salt/master/workers.ipc
+2023-07-09 02:05:22,289 [salt.transport.zeromq:419 ][INFO    ][121] Worker binding to socket ipc:///var/run/salt/master/workers.ipc
+2023-07-09 02:05:22,291 [salt.transport.zeromq:419 ][INFO    ][131] Worker binding to socket ipc:///var/run/salt/master/workers.ipc
+2023-07-09 02:05:22,304 [salt.transport.zeromq:419 ][INFO    ][129] Worker binding to socket ipc:///var/run/salt/master/workers.ipc
+2023-07-09 02:05:22,313 [salt.transport.zeromq:419 ][INFO    ][130] Worker binding to socket ipc:///var/run/salt/master/workers.ipc
+2023-07-09 02:24:21,524 [salt.transport.zeromq:355 ][INFO    ][129] MWorkerQueue under PID 129 is closing
+2023-07-09 02:24:21,524 [salt.transport.zeromq:355 ][INFO    ][121] MWorkerQueue under PID 121 is closing
+2023-07-09 02:24:21,524 [salt.transport.zeromq:355 ][INFO    ][122] MWorkerQueue under PID 122 is closing
+2023-07-09 02:24:21,524 [salt.transport.zeromq:355 ][INFO    ][130] MWorkerQueue under PID 130 is closing
+2023-07-09 02:24:21,524 [salt.transport.zeromq:355 ][INFO    ][120] MWorkerQueue under PID 120 is closing
+2023-07-09 02:24:21,524 [salt.transport.zeromq:355 ][INFO    ][131] MWorkerQueue under PID 131 is closing
+2023-07-09 02:24:22,525 [salt.utils.process:744 ][INFO    ][119] Some processes failed to respect the KILL signal: Process: <Process name='MWorkerQueue' pid=120 parent=119 started> (Pid: 120)
+2023-07-09 02:24:22,525 [salt.utils.process:751 ][INFO    ][119] kill_children retries left: 3
+2023-07-09 02:24:22,529 [salt.utils.parsers:1060][WARNING ][95] Master received a SIGTERM. Exiting.
+2023-07-09 02:24:22,529 [salt.cli.daemons :99  ][INFO    ][95] The Salt Master is shut down
+2023-07-09 02:31:00,444 [salt.utils.parsers:1060][WARNING ][88] Master received a SIGTERM. Exiting.
+2023-07-09 02:33:43,630 [salt.utils.parsers:1060][WARNING ][86] Master received a SIGTERM. Exiting.
+2023-07-09 02:37:21,856 [salt.cli.daemons :83  ][INFO    ][88] Setting up the Salt Master
+2023-07-09 02:37:22,310 [salt.daemons.masterapi:221 ][INFO    ][88] Preparing the salt key for local communication
+2023-07-09 02:37:22,311 [salt.cli.daemons :83  ][INFO    ][88] Starting up the Salt Master
+2023-07-09 02:37:22,333 [salt.master      :690 ][INFO    ][88] salt-master is starting as user 'salt'
+2023-07-09 02:37:22,333 [salt.master      :559 ][INFO    ][88] Current values for max open files soft/hard setting: 1048576/1048576
+2023-07-09 02:37:22,340 [salt.master      :717 ][INFO    ][88] Creating master process manager
+2023-07-09 02:37:22,340 [salt.master      :721 ][INFO    ][88] Creating master publisher process
+2023-07-09 02:37:22,582 [salt.master      :727 ][INFO    ][88] Creating master event publisher process
+2023-07-09 02:37:22,589 [salt.transport.zeromq:744 ][INFO    ][107] Starting the Salt Publisher on tcp://0.0.0.0:4505
+2023-07-09 02:37:22,589 [salt.transport.zeromq:747 ][INFO    ][107] Starting the Salt Puller on ipc:///var/run/salt/master/publish_pull.ipc
+2023-07-09 02:37:22,595 [salt.master      :751 ][INFO    ][88] Creating master maintenance process
+2023-07-09 02:37:22,597 [salt.master      :790 ][INFO    ][88] Creating master request server process
+2023-07-09 02:37:22,615 [salt.transport.zeromq:328 ][INFO    ][113] Setting up the master communication server
+2023-07-09 02:37:22,615 [salt.transport.zeromq:329 ][INFO    ][113] ReqServer clients tcp://0.0.0.0:4506
+2023-07-09 02:37:22,615 [salt.transport.zeromq:331 ][INFO    ][113] ReqServer workers ipc:///var/run/salt/master/workers.ipc
+2023-07-09 02:37:23,093 [salt.transport.zeromq:419 ][INFO    ][125] Worker binding to socket ipc:///var/run/salt/master/workers.ipc
+2023-07-09 02:37:23,110 [salt.transport.zeromq:419 ][INFO    ][123] Worker binding to socket ipc:///var/run/salt/master/workers.ipc
+2023-07-09 02:37:23,112 [salt.transport.zeromq:419 ][INFO    ][114] Worker binding to socket ipc:///var/run/salt/master/workers.ipc
+2023-07-09 02:37:23,116 [salt.transport.zeromq:419 ][INFO    ][115] Worker binding to socket ipc:///var/run/salt/master/workers.ipc
+2023-07-09 02:37:23,126 [salt.transport.zeromq:419 ][INFO    ][124] Worker binding to socket ipc:///var/run/salt/master/workers.ipc
+2023-07-09 02:38:21,210 [salt.transport.zeromq:355 ][INFO    ][124] MWorkerQueue under PID 124 is closing
+2023-07-09 02:38:21,210 [salt.transport.zeromq:355 ][INFO    ][114] MWorkerQueue under PID 114 is closing
+2023-07-09 02:38:21,210 [salt.transport.zeromq:355 ][INFO    ][115] MWorkerQueue under PID 115 is closing
+2023-07-09 02:38:21,210 [salt.transport.zeromq:355 ][INFO    ][123] MWorkerQueue under PID 123 is closing
+2023-07-09 02:38:21,211 [salt.transport.zeromq:355 ][INFO    ][125] MWorkerQueue under PID 125 is closing
+2023-07-09 02:38:21,211 [salt.transport.zeromq:355 ][INFO    ][113] MWorkerQueue under PID 113 is closing
+2023-07-09 02:38:21,226 [salt.utils.parsers:1060][WARNING ][88] Master received a SIGTERM. Exiting.
+2023-07-09 02:38:21,227 [salt.cli.daemons :99  ][INFO    ][88] The Salt Master is shut down
+2023-07-09 02:38:54,433 [salt.cli.daemons :83  ][INFO    ][88] Setting up the Salt Master
+2023-07-09 02:38:54,880 [salt.daemons.masterapi:221 ][INFO    ][88] Preparing the salt key for local communication
+2023-07-09 02:38:54,882 [salt.cli.daemons :83  ][INFO    ][88] Starting up the Salt Master
+2023-07-09 02:38:54,903 [salt.master      :690 ][INFO    ][88] salt-master is starting as user 'salt'
+2023-07-09 02:38:54,903 [salt.master      :559 ][INFO    ][88] Current values for max open files soft/hard setting: 1048576/1048576
+2023-07-09 02:38:54,909 [salt.master      :717 ][INFO    ][88] Creating master process manager
+2023-07-09 02:38:54,910 [salt.master      :721 ][INFO    ][88] Creating master publisher process
+2023-07-09 02:38:55,154 [salt.master      :727 ][INFO    ][88] Creating master event publisher process
+2023-07-09 02:38:55,167 [salt.master      :751 ][INFO    ][88] Creating master maintenance process
+2023-07-09 02:38:55,168 [salt.transport.zeromq:744 ][INFO    ][107] Starting the Salt Publisher on tcp://0.0.0.0:4505
+2023-07-09 02:38:55,169 [salt.transport.zeromq:747 ][INFO    ][107] Starting the Salt Puller on ipc:///var/run/salt/master/publish_pull.ipc
+2023-07-09 02:38:55,169 [salt.master      :790 ][INFO    ][88] Creating master request server process
+2023-07-09 02:38:55,188 [salt.transport.zeromq:328 ][INFO    ][113] Setting up the master communication server
+2023-07-09 02:38:55,188 [salt.transport.zeromq:329 ][INFO    ][113] ReqServer clients tcp://0.0.0.0:4506
+2023-07-09 02:38:55,188 [salt.transport.zeromq:331 ][INFO    ][113] ReqServer workers ipc:///var/run/salt/master/workers.ipc
+2023-07-09 02:38:55,672 [salt.transport.zeromq:419 ][INFO    ][124] Worker binding to socket ipc:///var/run/salt/master/workers.ipc
+2023-07-09 02:38:55,672 [salt.transport.zeromq:419 ][INFO    ][117] Worker binding to socket ipc:///var/run/salt/master/workers.ipc
+2023-07-09 02:38:55,687 [salt.transport.zeromq:419 ][INFO    ][125] Worker binding to socket ipc:///var/run/salt/master/workers.ipc
+2023-07-09 02:38:55,688 [salt.transport.zeromq:419 ][INFO    ][114] Worker binding to socket ipc:///var/run/salt/master/workers.ipc
+2023-07-09 02:38:55,688 [salt.transport.zeromq:419 ][INFO    ][116] Worker binding to socket ipc:///var/run/salt/master/workers.ipc
+2023-07-09 02:41:41,869 [salt.channel.server:288 ][INFO    ][124] Authentication request from quantum-machine
+2023-07-09 02:41:41,869 [salt.channel.server:413 ][INFO    ][124] New public key for quantum-machine placed in pending
+2023-07-09 02:41:51,906 [salt.channel.server:288 ][INFO    ][117] Authentication request from quantum-machine
+2023-07-09 02:41:51,907 [salt.channel.server:500 ][INFO    ][117] Authentication failed from host quantum-machine, the key is in pending and needs to be accepted with salt-key -a quantum-machine
+2023-07-09 02:42:01,950 [salt.channel.server:288 ][INFO    ][116] Authentication request from quantum-machine
+2023-07-09 02:42:01,951 [salt.channel.server:500 ][INFO    ][116] Authentication failed from host quantum-machine, the key is in pending and needs to be accepted with salt-key -a quantum-machine
+2023-07-09 02:42:11,997 [salt.channel.server:288 ][INFO    ][114] Authentication request from quantum-machine
+2023-07-09 02:42:11,998 [salt.channel.server:500 ][INFO    ][114] Authentication failed from host quantum-machine, the key is in pending and needs to be accepted with salt-key -a quantum-machine
+2023-07-09 02:42:22,043 [salt.channel.server:288 ][INFO    ][124] Authentication request from quantum-machine
+2023-07-09 02:42:22,043 [salt.channel.server:500 ][INFO    ][124] Authentication failed from host quantum-machine, the key is in pending and needs to be accepted with salt-key -a quantum-machine
+2023-07-09 02:42:32,078 [salt.channel.server:288 ][INFO    ][125] Authentication request from quantum-machine
+2023-07-09 02:42:32,079 [salt.channel.server:500 ][INFO    ][125] Authentication failed from host quantum-machine, the key is in pending and needs to be accepted with salt-key -a quantum-machine
+2023-07-09 02:42:42,106 [salt.channel.server:288 ][INFO    ][116] Authentication request from quantum-machine
+2023-07-09 02:42:42,107 [salt.channel.server:500 ][INFO    ][116] Authentication failed from host quantum-machine, the key is in pending and needs to be accepted with salt-key -a quantum-machine
+2023-07-09 02:42:52,129 [salt.channel.server:288 ][INFO    ][114] Authentication request from quantum-machine
+2023-07-09 02:42:52,129 [salt.channel.server:500 ][INFO    ][114] Authentication failed from host quantum-machine, the key is in pending and needs to be accepted with salt-key -a quantum-machine
+2023-07-09 02:43:02,166 [salt.channel.server:288 ][INFO    ][124] Authentication request from quantum-machine
+2023-07-09 02:43:02,167 [salt.channel.server:500 ][INFO    ][124] Authentication failed from host quantum-machine, the key is in pending and needs to be accepted with salt-key -a quantum-machine
+2023-07-09 02:43:12,206 [salt.channel.server:288 ][INFO    ][125] Authentication request from quantum-machine
+2023-07-09 02:43:12,207 [salt.channel.server:500 ][INFO    ][125] Authentication failed from host quantum-machine, the key is in pending and needs to be accepted with salt-key -a quantum-machine
+2023-07-09 02:43:22,230 [salt.channel.server:288 ][INFO    ][116] Authentication request from quantum-machine
+2023-07-09 02:43:22,231 [salt.channel.server:500 ][INFO    ][116] Authentication failed from host quantum-machine, the key is in pending and needs to be accepted with salt-key -a quantum-machine
+2023-07-09 02:43:32,269 [salt.channel.server:288 ][INFO    ][114] Authentication request from quantum-machine
+2023-07-09 02:43:32,270 [salt.channel.server:500 ][INFO    ][114] Authentication failed from host quantum-machine, the key is in pending and needs to be accepted with salt-key -a quantum-machine
+2023-07-09 02:43:42,304 [salt.channel.server:288 ][INFO    ][117] Authentication request from quantum-machine
+2023-07-09 02:43:42,304 [salt.channel.server:500 ][INFO    ][117] Authentication failed from host quantum-machine, the key is in pending and needs to be accepted with salt-key -a quantum-machine
+2023-07-09 02:43:52,338 [salt.channel.server:288 ][INFO    ][125] Authentication request from quantum-machine
+2023-07-09 02:43:52,338 [salt.channel.server:500 ][INFO    ][125] Authentication failed from host quantum-machine, the key is in pending and needs to be accepted with salt-key -a quantum-machine
+2023-07-09 02:44:02,378 [salt.channel.server:288 ][INFO    ][116] Authentication request from quantum-machine
+2023-07-09 02:44:02,378 [salt.channel.server:500 ][INFO    ][116] Authentication failed from host quantum-machine, the key is in pending and needs to be accepted with salt-key -a quantum-machine
+2023-07-09 02:44:12,414 [salt.channel.server:288 ][INFO    ][124] Authentication request from quantum-machine
+2023-07-09 02:44:12,415 [salt.channel.server:500 ][INFO    ][124] Authentication failed from host quantum-machine, the key is in pending and needs to be accepted with salt-key -a quantum-machine
+2023-07-09 02:44:22,454 [salt.channel.server:288 ][INFO    ][117] Authentication request from quantum-machine
+2023-07-09 02:44:22,454 [salt.channel.server:500 ][INFO    ][117] Authentication failed from host quantum-machine, the key is in pending and needs to be accepted with salt-key -a quantum-machine
+2023-07-09 02:44:32,492 [salt.channel.server:288 ][INFO    ][125] Authentication request from quantum-machine
+2023-07-09 02:44:32,493 [salt.channel.server:500 ][INFO    ][125] Authentication failed from host quantum-machine, the key is in pending and needs to be accepted with salt-key -a quantum-machine
+2023-07-09 02:44:42,533 [salt.channel.server:288 ][INFO    ][114] Authentication request from quantum-machine
+2023-07-09 02:44:42,534 [salt.channel.server:500 ][INFO    ][114] Authentication failed from host quantum-machine, the key is in pending and needs to be accepted with salt-key -a quantum-machine
+2023-07-09 02:44:52,574 [salt.channel.server:288 ][INFO    ][124] Authentication request from quantum-machine
+2023-07-09 02:44:52,574 [salt.channel.server:500 ][INFO    ][124] Authentication failed from host quantum-machine, the key is in pending and needs to be accepted with salt-key -a quantum-machine
+2023-07-09 02:45:02,614 [salt.channel.server:288 ][INFO    ][117] Authentication request from quantum-machine
+2023-07-09 02:45:02,615 [salt.channel.server:500 ][INFO    ][117] Authentication failed from host quantum-machine, the key is in pending and needs to be accepted with salt-key -a quantum-machine
+2023-07-09 02:45:12,654 [salt.channel.server:288 ][INFO    ][116] Authentication request from quantum-machine
+2023-07-09 02:45:12,654 [salt.channel.server:564 ][INFO    ][116] Authentication accepted from quantum-machine
+2023-07-09 02:45:22,719 [salt.channel.server:288 ][INFO    ][114] Authentication request from quantum-machine
+2023-07-09 02:45:22,720 [salt.channel.server:564 ][INFO    ][114] Authentication accepted from quantum-machine
+2023-07-09 02:45:37,870 [salt.channel.server:288 ][INFO    ][124] Authentication request from quantum-machine
+2023-07-09 02:45:37,871 [salt.channel.server:564 ][INFO    ][124] Authentication accepted from quantum-machine
+2023-07-09 02:45:47,922 [salt.channel.server:288 ][INFO    ][125] Authentication request from quantum-machine
+2023-07-09 02:45:47,923 [salt.channel.server:564 ][INFO    ][125] Authentication accepted from quantum-machine
+2023-07-09 02:45:57,983 [salt.channel.server:288 ][INFO    ][116] Authentication request from quantum-machine
+2023-07-09 02:45:57,983 [salt.channel.server:564 ][INFO    ][116] Authentication accepted from quantum-machine
+2023-07-09 02:46:08,038 [salt.channel.server:288 ][INFO    ][114] Authentication request from quantum-machine
+2023-07-09 02:46:08,039 [salt.channel.server:564 ][INFO    ][114] Authentication accepted from quantum-machine
+2023-07-09 02:46:18,098 [salt.channel.server:288 ][INFO    ][117] Authentication request from quantum-machine
+2023-07-09 02:46:18,099 [salt.channel.server:564 ][INFO    ][117] Authentication accepted from quantum-machine
+2023-07-09 02:46:28,162 [salt.channel.server:288 ][INFO    ][125] Authentication request from quantum-machine
+2023-07-09 02:46:28,163 [salt.channel.server:564 ][INFO    ][125] Authentication accepted from quantum-machine
+2023-07-09 02:46:38,214 [salt.channel.server:288 ][INFO    ][116] Authentication request from quantum-machine
+2023-07-09 02:46:38,215 [salt.channel.server:564 ][INFO    ][116] Authentication accepted from quantum-machine
+2023-07-09 02:46:48,273 [salt.channel.server:288 ][INFO    ][124] Authentication request from quantum-machine
+2023-07-09 02:46:48,274 [salt.channel.server:564 ][INFO    ][124] Authentication accepted from quantum-machine
+2023-07-09 02:46:58,329 [salt.channel.server:288 ][INFO    ][117] Authentication request from quantum-machine
+2023-07-09 02:46:58,329 [salt.channel.server:564 ][INFO    ][117] Authentication accepted from quantum-machine
+2023-07-09 02:47:08,388 [salt.channel.server:288 ][INFO    ][125] Authentication request from quantum-machine
+2023-07-09 02:47:08,388 [salt.channel.server:564 ][INFO    ][125] Authentication accepted from quantum-machine
+2023-07-09 02:47:18,445 [salt.channel.server:288 ][INFO    ][114] Authentication request from quantum-machine
+2023-07-09 02:47:18,446 [salt.channel.server:564 ][INFO    ][114] Authentication accepted from quantum-machine
+2023-07-09 02:47:28,504 [salt.channel.server:288 ][INFO    ][124] Authentication request from quantum-machine
+2023-07-09 02:47:28,505 [salt.channel.server:564 ][INFO    ][124] Authentication accepted from quantum-machine
+2023-07-09 02:47:46,598 [salt.channel.server:288 ][INFO    ][114] Authentication request from quantum-machine
+2023-07-09 02:47:46,598 [salt.channel.server:564 ][INFO    ][114] Authentication accepted from quantum-machine
+2023-07-09 02:48:44,125 [salt.master      :2511][INFO    ][124] User root Published command test.ping with jid 20230709024844121323
+2023-07-09 02:48:44,212 [salt.utils.job   :86  ][INFO    ][117] Got return from quantum-machine for job 20230709024844121323

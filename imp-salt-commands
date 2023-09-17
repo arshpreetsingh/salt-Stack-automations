@@ -1,0 +1,83 @@
+very very nice video:::::::::::
+https://youtu.be/Ymmsu90yZbg
+https://youtu.be/Ymmsu90yZbg
+
+Deepest video of salt stack!!
+https://youtu.be/xZQl-LvgTgg
+
+Salt-Zeror to Hero
+
+https://youtu.be/EiQty-dVfqY
+
+
+what is the difference between salt-state and salt-grain?
+
+what is salt-mine?
+
+
+Can I create one Flask-APP which will run Commands on each Salt-Node?
+
+https://www.youtube.com/watch?v=z8IRyesSvfs&list=PLgGQIE0cGrkiDRmJ3YWBKlI2KuYfFvfzV&index=28
+
+# Salt-Ec2 Port Connections
+
+working as expected. 
+https://www.linkedin.com/pulse/setting-up-cross-platform-saltstack-development-aws-dehvon-curtis/
+
+
+
+# need to see if we can use this?
+https://docs.saltproject.io/en/latest/topics/cloud/aws.html
+
+#1  Salt-Master installation Entirely BootStrap work!
+
+
+# Download Bootstrap Script:
+curl -o bootstrap-salt.sh -L https://bootstrap.saltproject.io
+
+# Make Executable
+
+chmod +x bootstrap-salt.sh
+
+# Install Salt Master service:
+
+./bootstrap-salt.sh -M -N
+
+# Install Just minoin
+
+./bootstrap-salt.sh
+# Fix Salt-Master Ip while installation
+
+bootstrap-salt.sh -A 13.211.158.86 -M -N stable 3006.1
+
+13.211.158.86
+
+# Install Salt Minion with Specific ID
+
+bootstrap-salt.sh -i apache-server-1 stable
+
+
+sudo systemctl status/start/stop salt-master
+
+sudo systemctl status/s/s salt-minion
+
+
+# TO check on which IP Salt master is Running
+hostname -I
+
+# Check the pending keys from Salt-Master
+
+sudo salt-key -L
+
+# Accept salt Keys
+sudo salt-key -a apache-server-1 quantum-machine
+
+
+# Salt
+
+
+[ec2-user@ip-172-31-9-108 ~]$ sudo salt '*' test.ping
+ip-172-31-11-61.ap-southeast-2.compute.internal:
+    True
+ip-172-31-9-108.ap-southeast-2.compute.internal:
+    True

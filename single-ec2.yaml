@@ -1,0 +1,28 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Description: Simple EC2 Instance with SSH access
+
+Resources:
+  EC2Instance:
+    Type: AWS::EC2::Instance
+    Properties:
+      ImageId: ami-0310483fb2b488153  # Replace with the desired AMI ID
+      InstanceType: t2.micro  # Replace with the desired instance type
+      KeyName: nirvair  # Replace with your key pair name
+
+  SecurityGroup:
+    Type: AWS::EC2::SecurityGroup
+    Properties:
+      GroupDescription: Allow SSH access
+      SecurityGroupIngress:
+        - IpProtocol: tcp
+          FromPort: 22
+          ToPort: 22
+          CidrIp: 0.0.0.0/0  # Replace with the desired IP range for SSH access
+
+Outputs:
+  InstanceId:
+    Description: The ID of the created EC2 instance
+    Value: !Ref EC2Instance
+  InstancePublicIp:
+    Description: The public IP address of the created EC2 instance
+    Value: !GetAtt EC2Instance.PublicIp

@@ -1,0 +1,66 @@
+2023-07-09 02:05:19,970 INFO Included extra file "/etc/supervisor/conf.d/cron.conf" during parsing
+2023-07-09 02:05:19,970 INFO Included extra file "/etc/supervisor/conf.d/salt-master.conf" during parsing
+2023-07-09 02:05:19,970 INFO Set uid to user 0 succeeded
+2023-07-09 02:05:19,972 INFO RPC interface 'supervisor' initialized
+2023-07-09 02:05:19,972 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+2023-07-09 02:05:19,972 INFO supervisord started with pid 1
+2023-07-09 02:05:20,974 INFO spawned: 'salt-master' with pid 95
+2023-07-09 02:05:20,975 INFO spawned: 'cron' with pid 96
+2023-07-09 02:05:22,275 INFO success: salt-master entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-07-09 02:05:22,275 INFO success: cron entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-07-09 02:24:21,522 WARN received SIGTERM indicating exit request
+2023-07-09 02:24:21,523 INFO waiting for salt-master, cron to die
+2023-07-09 02:24:21,523 INFO stopped: cron (terminated by SIGTERM)
+2023-07-09 02:24:22,611 INFO stopped: salt-master (exit status 0)
+2023-07-09 02:25:31,999 INFO Included extra file "/etc/supervisor/conf.d/cron.conf" during parsing
+2023-07-09 02:25:31,999 INFO Included extra file "/etc/supervisor/conf.d/salt-master.conf" during parsing
+2023-07-09 02:25:31,999 INFO Set uid to user 0 succeeded
+2023-07-09 02:25:32,001 INFO RPC interface 'supervisor' initialized
+2023-07-09 02:25:32,001 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+2023-07-09 02:25:32,001 INFO supervisord started with pid 1
+2023-07-09 02:25:33,003 INFO spawned: 'salt-master' with pid 88
+2023-07-09 02:25:33,005 INFO spawned: 'cron' with pid 89
+2023-07-09 02:25:34,007 INFO success: salt-master entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-07-09 02:25:34,007 INFO success: cron entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-07-09 02:30:59,434 WARN received SIGTERM indicating exit request
+2023-07-09 02:30:59,435 INFO waiting for salt-master, cron to die
+2023-07-09 02:30:59,435 INFO stopped: cron (terminated by SIGTERM)
+2023-07-09 02:31:00,530 INFO stopped: salt-master (exit status 0)
+2023-07-09 02:31:51,450 INFO Included extra file "/etc/supervisor/conf.d/cron.conf" during parsing
+2023-07-09 02:31:51,451 INFO Included extra file "/etc/supervisor/conf.d/salt-master.conf" during parsing
+2023-07-09 02:31:51,451 INFO Set uid to user 0 succeeded
+2023-07-09 02:31:51,452 INFO RPC interface 'supervisor' initialized
+2023-07-09 02:31:51,452 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+2023-07-09 02:31:51,452 INFO supervisord started with pid 1
+2023-07-09 02:31:52,456 INFO spawned: 'salt-master' with pid 86
+2023-07-09 02:31:52,457 INFO spawned: 'cron' with pid 87
+2023-07-09 02:31:53,459 INFO success: salt-master entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-07-09 02:31:53,459 INFO success: cron entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-07-09 02:33:42,620 WARN received SIGTERM indicating exit request
+2023-07-09 02:33:42,621 INFO waiting for salt-master, cron to die
+2023-07-09 02:33:42,622 INFO stopped: cron (terminated by SIGTERM)
+2023-07-09 02:33:43,708 INFO stopped: salt-master (exit status 0)
+2023-07-09 02:37:20,415 INFO Included extra file "/etc/supervisor/conf.d/cron.conf" during parsing
+2023-07-09 02:37:20,415 INFO Included extra file "/etc/supervisor/conf.d/salt-master.conf" during parsing
+2023-07-09 02:37:20,415 INFO Set uid to user 0 succeeded
+2023-07-09 02:37:20,417 INFO RPC interface 'supervisor' initialized
+2023-07-09 02:37:20,417 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+2023-07-09 02:37:20,417 INFO supervisord started with pid 1
+2023-07-09 02:37:21,421 INFO spawned: 'salt-master' with pid 88
+2023-07-09 02:37:21,423 INFO spawned: 'cron' with pid 89
+2023-07-09 02:37:22,582 INFO success: salt-master entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-07-09 02:37:22,582 INFO success: cron entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-07-09 02:38:21,209 WARN received SIGTERM indicating exit request
+2023-07-09 02:38:21,209 INFO waiting for salt-master, cron to die
+2023-07-09 02:38:21,210 INFO stopped: cron (terminated by SIGTERM)
+2023-07-09 02:38:21,338 INFO stopped: salt-master (exit status 0)
+2023-07-09 02:38:52,986 INFO Included extra file "/etc/supervisor/conf.d/cron.conf" during parsing
+2023-07-09 02:38:52,986 INFO Included extra file "/etc/supervisor/conf.d/salt-master.conf" during parsing
+2023-07-09 02:38:52,986 INFO Set uid to user 0 succeeded
+2023-07-09 02:38:52,988 INFO RPC interface 'supervisor' initialized
+2023-07-09 02:38:52,988 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+2023-07-09 02:38:52,988 INFO supervisord started with pid 1
+2023-07-09 02:38:53,992 INFO spawned: 'salt-master' with pid 88
+2023-07-09 02:38:53,993 INFO spawned: 'cron' with pid 89
+2023-07-09 02:38:55,154 INFO success: salt-master entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-07-09 02:38:55,155 INFO success: cron entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)

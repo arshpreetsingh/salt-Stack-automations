@@ -1,0 +1,4 @@
+1. Create YAML to Deploy Minions and SaltStack Master.
+2. Create IAM role which should be same for Both INstances.
+3. Gime me the salt-stack and minions configuration file. 
+4. 

@@ -1,0 +1,134 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Description: SaltStack CloudFormation Template
+
+Parameters:
+  SaltMasterIP:
+    Type: String
+    Description: IP address of the Salt Master
+
+Resources:
+  SaltMasterInstance:
+    Type: AWS::EC2::Instance
+    Properties:
+      ImageId: ami-0310483fb2b488153  # Replace with the Ubuntu image ID
+      InstanceType: t2.micro  # Adjust instance type as needed
+      KeyName: nirvair  # Replace with your key pair name
+      SecurityGroups:
+        - !Ref SaltMasterSecurityGroup
+      IamInstanceProfile: !Ref SaltMasterInstanceProfile
+      UserData:
+        Fn::Base64: !Sub |
+          #!/bin/bash
+          apt-get update
+          apt-get install -y salt-master
+          mkdir -p /srv/formulas
+          cd /srv/formulas
+          git clone https://github.com/saltstack-formulas/sumo-logic-formula.git
+          echo "file_roots:" >> /etc/salt/master
+          echo "  base:" >> /etc/salt/master
+          echo "    - /srv/salt" >> /etc/salt/master
+          echo "    - /srv/formulas/sumo-logic-formula" >> /etc/salt/master
+          systemctl restart salt-master
+
+  SaltMinionInstance:
+    Type: AWS::EC2::Instance
+    Properties:
+      ImageId: ami-0310483fb2b488153  # Replace with the CentOS image ID
+      InstanceType: t2.micro  # Adjust instance type as needed
+      KeyName: nirvair  # Replace with your key pair name
+      SecurityGroups:
+        - !Ref SaltMinionSecurityGroup
+      IamInstanceProfile: !Ref SaltMinionInstanceProfile
+      UserData:
+        Fn::Base64: !Sub |
+          #!/bin/bash
+          yum -y update
+          yum -y install https://repo.saltstack.com/py3/redhat/salt-py3-repo-latest.el7.noarch.rpm
+          yum -y install salt-minion
+          echo "master: ${SaltMasterIP}" >> /etc/salt/minion
+          systemctl start salt-minion
+
+  SaltMinionApacheInstance:
+    Type: AWS::EC2::Instance
+    Properties:
+      ImageId: ami-0310483fb2b488153  # Replace with the CentOS image ID
+      InstanceType: t2.micro  # Adjust instance type as needed
+      KeyName: nirvair  # Replace with your key pair name
+      SecurityGroups:
+        - !Ref SaltMinionSecurityGroup
+      IamInstanceProfile: !Ref SaltMinionInstanceProfile
+      UserData:
+        Fn::Base64: !Sub |
+          #!/bin/bash
+          yum -y update
+          yum -y install https://repo.saltstack.com/py3/redhat/salt-py3-repo-latest.el7.noarch.rpm
+          yum -y install salt-minion
+          yum -y install httpd
+          systemctl enable httpd
+          systemctl start httpd
+          echo "master: ${SaltMasterIP}" >> /etc/salt/minion
+          systemctl start salt-minion
+
+  SaltMasterSecurityGroup:
+    Type: AWS::EC2::SecurityGroup
+    Properties:
+      GroupDescription: Salt Master Security Group
+      SecurityGroupIngress:
+        - IpProtocol: tcp
+          FromPort: 4505
+          ToPort: 4506
+          SourceSecurityGroupId: !Ref SaltMinionSecurityGroup
+
+  SaltMinionSecurityGroup:
+    Type: AWS::EC2::SecurityGroup
+    Properties:
+      GroupDescription: Salt Minion Security Group
+      SecurityGroupIngress:
+        - IpProtocol: tcp
+          FromPort: 4505
+          ToPort: 4506
+          SourceSecurityGroupId: !Ref SaltMasterSecurityGroup
+        - IpProtocol: tcp
+          FromPort: 80
+          ToPort: 80
+          SourceSecurityGroupId: !Ref SaltMasterSecurityGroup
+
+  SaltMasterInstanceProfile:
+    Type: AWS::IAM::InstanceProfile
+    Properties:
+      Path: /
+      Roles:
+        - !Ref SaltMasterRole
+
+  SaltMinionInstanceProfile:
+    Type: AWS::IAM::InstanceProfile
+    Properties:
+      Path: /
+      Roles:
+        - !Ref SaltMinionRole
+
+  SaltMasterRole:
+    Type: AWS::IAM::Role
+    Properties:
+      AssumeRolePolicyDocument:
+        Version: '2012-10-17'
+        Statement:
+          - Effect: Allow
+            Principal:
+              Service: ec2.amazonaws.com
+            Action: sts:AssumeRole
+      Path: /
+      Policies:
+        - PolicyName: SaltMasterRolePolicy
+          PolicyDocument:
+            Version: '2012-10-17'
+            Statement:
+              - Effect: Allow
+                Action: '*'
+                Resource: '*'
+
+  SaltMinionRole:
+    Type: AWS::IAM::Role
+    Properties:
+      AssumeRolePolicyDocument:
+        Version:

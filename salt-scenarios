@@ -1,0 +1,42 @@
+# Simple WebAPP
+1. Create a Complete WebSerice Application (Python-Flask-APP) as Salt-Formula.
+2. deploy it on Salt-minion, so salt-Minion should run that Salt-Formula.
+
+# Graphana Formula
+1. There is graphana Formula available in hte salt-stack repo. 
+2. use that and Deploy it somewhere. 
+
+# SaltStack's SaltStack-salt-formula:
+
+Need to Explore this, how this can be Formed?
+
+# use Django Formula and Deploy it on single and multiple Stakcs!!
+
+https://github.com/saltstack-formulas/django-formula
+
+# SaltCloud
+
+https://docs.saltproject.io/en/latest/topics/cloud/
+
+So Final thing. 
+
+I have created One Salt-master on my Local-System, 
+using salt-cloud I have created VM's on Following clouds. 
+
+Without even opening any Cloud-Console!
+
+
+1. AWS
+Extending Profiles:
+https://docs.saltproject.io/en/latest/topics/cloud/config.html#amazon-aws
+
+2. Azure
+3. Linode
+4. Rackspace
+5. Open-nebula
+
+
+# So my understanding is, there could be one complete Python-project built using Salt-Python-API
+# all the things like how salt-master is talking to salt-minions and How salt minions are being managed, upScaled, Down-Scaled
+# configured and what not is being happened from that Python-stack it self, 
+# It is like Python-project is built-over the Salt-Stack!!!

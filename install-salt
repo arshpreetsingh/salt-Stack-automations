@@ -1,0 +1,5 @@
+curl -o bootstrap-salt.sh -L https://bootstrap.saltproject.io
+
+chmod +x bootstrap-salt.sh
+
+

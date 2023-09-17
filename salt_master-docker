@@ -1,0 +1,29 @@
+# Salt-master can be put inside docker using following command:
+
+docker run --name salt_master --detach \
+    --publish 4505:4505 --publish 4506:4506 \
+    --health-cmd='/usr/local/sbin/healthcheck' \
+    --health-start-period=30s \
+    --env 'SALT_LOG_LEVEL=info' \
+    --volume $(pwd)/roots/:/home/salt/data/srv/ \
+    --volume $(pwd)/keys/:/home/salt/data/keys/ \
+    --volume $(pwd)/logs/:/home/salt/data/logs/ \
+    ghcr.io/cdalvaro/docker-salt-master:latest
+
+# now setup minion anyweehre. 
+
+./bootstrap-salt.sh
+
+# add salt-master IP in minion.conf file
+
+/etc/salt/minion/minion.conf
+
+master: <salt-master-ip-address>
+
+# now accept salt keys from Salt-master
+
+salt-key -L
+
+salt-key -a <Salt-IP>
+
+#  Check salt-master and Salt minion logs. 
